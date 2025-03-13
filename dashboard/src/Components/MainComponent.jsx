@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Dialog, DialogActions, DialogContent, DialogTitle, Button, Typography } from "@mui/material";
-import { useTheme } from "./Theme"; // Import the useTheme hook
+import { useTheme } from "./Theme"; 
+import WbIncandescentIcon from '@mui/icons-material/WbIncandescent';
 import "./MainComponent.css";
 
 const MainComponent = () => {
@@ -69,7 +70,7 @@ const MainComponent = () => {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <button onClick={toggleTheme}>Toggle Theme</button> {/* Button to toggle theme */}
+      <WbIncandescentIcon onClick={toggleTheme} className="btn-icon"/> 
 
       <table>
         <caption>Github Login Details</caption>
@@ -78,7 +79,6 @@ const MainComponent = () => {
             <th>Id</th>
             <th>Login Details</th>
             <th>Followers</th>
-            <th>Following</th>
             <th>Organization</th>
           </tr>
         </thead>
@@ -88,7 +88,6 @@ const MainComponent = () => {
               <td>{user.id}</td>
               <td>{user.login}</td>
               <td>{user.followers_url}</td>
-              <td>{user.following_url}</td>
               <td>{user.organizations_url}</td>
             </tr>
           ))}
