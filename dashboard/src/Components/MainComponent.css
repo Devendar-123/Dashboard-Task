@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 4px;
+    width: 30%;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #5694a0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 99%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 8px;
+    border: 1px solid #231fcd;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #9b9999;
+  }
+  
+  /* Light Theme */
+  body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  body.light-theme table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Dark Theme */
+  body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.dark-theme table th {
+    background-color: #333333;
+  }
+  
+  body.dark-theme input[type="text"] {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #20628b;
+  }
+  
+  body.dark-theme button {
+    background-color: #007bff;
+  }
+  
+  body.dark-theme button:hover {
+    background-color: #0056b3;
+  }
+  
+  body.dark-theme table th,
+  body.dark-theme table td {
+    border: 1px solid #3d5a6c;
+  }
+  
+  body.dark-theme table th {
+    background-color: #333333;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    input[type="text"] {
+      width: 70%; 
+    }
+  
+    table {
+      width: 100%;
+      font-size: 12px; 
+    }
+  
+    table th, table td {
+      padding: 6px;
+    }
+
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    table th, table td {
+      text-align: left;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+  
+    button {
+      width: 100%; 
+    }
+  
+    button {
+      margin-top: 15px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    input[type="text"] {
+      width: 90%;
+    }
+  
+    table {
+      font-size: 10px;
+    }
+  
+    table th, table td {
+      padding: 5px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px 20px; 
+    }
+  }
+  
